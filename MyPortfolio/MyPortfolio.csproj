@@ -33,9 +33,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      git add .
-      git commit -m "Remove DS_Store references from project"
-      git push
       <Content Include="wwwroot\argon-dashboard-master\.github\workflows\main.yml" />
       <Content Include="wwwroot\template\.DS_Store" />
     </ItemGroup>
