@@ -1,0 +1,34 @@
+@using EntityLayer.Concrete
+@model List<Projects>
+
+<div class="row justify-content-center">
+    <div class="col-md-8 wide-col-laptop">
+        <div class="title-block animate" data-animate="fadeInUp">
+            <span>Projelerim</span>
+            <h2>Neler yaptım?</h2>
+        </div>
+
+        <div class="gallery-section">
+
+            <div class="gallery-list owl-carousel">
+
+                @foreach (var item in Model)
+                {
+                    <div class="item animate" data-animate="fadeInUp">
+                        <a href="@item.githubLink" target="_blank" title="@item.title GitHub Linki">
+                            <div class="portfolio-item">
+                                <div class="thumb">
+                                    <img src="@item.imageUrl" alt="@item.title">
+                                </div>
+                                <div class="thumb-inner animate" data-animate="fadeInUp">
+                                    <h4>@item.title</h4>
+                                    <p>@item.description</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

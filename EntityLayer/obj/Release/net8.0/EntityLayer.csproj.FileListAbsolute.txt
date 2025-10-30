@@ -1,0 +1,15 @@
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/bin/Release/net8.0/EntityLayer.deps.json
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/bin/Release/net8.0/EntityLayer.runtimeconfig.json
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/bin/Release/net8.0/EntityLayer.dll
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/bin/Release/net8.0/EntityLayer.pdb
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.AssemblyInfo.cs
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.sourcelink.json
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.dll
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/refint/EntityLayer.dll
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.pdb
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/EntityLayer.genruntimeconfig.cache
+/Users/cagla/RiderProjects/MyPortfolio/EntityLayer/obj/Release/net8.0/ref/EntityLayer.dll

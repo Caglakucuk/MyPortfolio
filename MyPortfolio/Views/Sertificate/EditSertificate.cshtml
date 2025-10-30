@@ -1,0 +1,30 @@
+@model EntityLayer.Concrete.Sertificate
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br/> <br/>
+<div class="card-header border-0">
+    <h3 class="mb-0">Sertifika Güncelleme Sayfası</h3>
+</div>
+@using (Html.BeginForm("EditSertificate", "Sertificate", FormMethod.Post))
+{
+    @Html.HiddenFor(x=>x.sertificate_id)
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    @Html.Label("Sertifika Adı")
+    @Html.TextBoxFor(x => x.sertificate_name, new{@class="form-control" })
+    <br/>
+    @Html.Label("Şirket")
+    @Html.TextBoxFor(x => x.company, new{@class="form-control" })
+    <br/>
+    @Html.Label("Resim Linki")
+    @Html.TextBoxFor(x => x.img_url, new{@class="form-control"})
+    <br/>
+
+    <button type="submit" class="btn btn-success">Güncelle </button>
+}

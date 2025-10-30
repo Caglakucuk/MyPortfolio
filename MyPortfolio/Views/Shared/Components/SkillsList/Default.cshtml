@@ -1,0 +1,26 @@
+@using EntityLayer.Concrete
+@model List<Skills>
+<div class="row justify-content-center">
+    <div class="col-md-7 wide-col-laptop">
+        <div class="title-block animate" data-animate="fadeInUp">
+            <span>Yeteneklerim</span>
+            <h2>What i’m good?</h2>
+        </div>
+        <div class="skills-row animate" data-animate="fadeInDown">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-6">
+                        <div class="skill-item">
+                            <h6>@item.skill_name</h6>
+                            <div class="skill-bar" aria-valuenow="@item.level" aria-valuemax="100" aria-valuemin="0">
+                                <span>@item.level</span>
+                                <div class="filled-bar" style="width: @item.level%"></div> 
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div> 
+        </div>
+    </div>
+</div>

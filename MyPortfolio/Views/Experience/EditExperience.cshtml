@@ -1,0 +1,32 @@
+@model EntityLayer.Concrete.Experience
+@{
+    ViewBag.Title = "EditExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br/> <br/>
+<div class="card-header border-0">
+    <h3 class="mb-0">Deneyim Güncelleme Sayfası</h3>
+</div>
+@using (Html.BeginForm("EditExperience", "Experience", FormMethod.Post))
+{
+    @Html.HiddenFor(x=>x.experience_id)
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    @Html.Label("Rolünüz")
+    @Html.TextBoxFor(x => x.role, new{@class="form-control"})
+    <br/>
+    @Html.Label("Şirket")
+    @Html.TextBoxFor(x => x.company_name, new{@class="form-control"})
+    <br/>
+    @Html.Label("Başlangıç Tarihi")
+    @Html.TextBoxFor(x => x.start_date, new{@class="form-control", type="date"})
+    <br/>
+    @Html.Label("Bitiş Tarihi")
+    @Html.TextBoxFor(x => x.end_date, new{@class="form-control", type="date"})
+    <br/>
+    <button type="submit" class="btn btn-success">Güncelle </button>
+}

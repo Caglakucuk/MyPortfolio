@@ -1,0 +1,43 @@
+@model List<EntityLayer.Concrete.Sertificate>
+
+
+<div class="card-header border-0">
+    <div class="row align-items-center">
+        <div class="col">
+            <h3 class="mb-0">Son 5 Sertifikam</h3>
+        </div>
+        <div class="col text-right">
+            <a href="/Sertificate/Index" class="btn btn-sm btn-primary">Tümünü Gör</a>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+        <tr>
+            <th scope="col">Sertifika Adı</th>
+            <th scope="col">Kurum</th>
+            <th scope="col">Resim</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <th scope="row">
+                @item.sertificate_name
+            </th>
+            <td>
+                @item.company
+            </td>
+            
+            <td>
+              @item.img_url
+            </td>
+        </tr>
+        }
+        </tbody>
+    </table>
+</div>

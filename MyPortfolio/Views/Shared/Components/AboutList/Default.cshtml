@@ -1,0 +1,33 @@
+@using EntityLayer.Concrete
+@model List<About>
+        <div class="about-section">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                    <div class="row">
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-md-6">
+
+                                <div class="about-contentbox">
+                                    <div class="animate" data-animate="fadeInUp">
+                                        <span>Hakkımda</span>
+                                        <h2>@item.title</h2>
+                                        <p>@item.description</p>
+                                    </div >
+                                </div>
+                         
+                            </div>
+                            <div class="col-md-6">
+                                <figure class="about-img animate" data-animate="fadeInUp">
+                                    <img src="@item.img_url" class="rounded" alt="">
+                                </figure>
+
+                            </div>
+                        }
+                    </div>
+                    <a style="background-color: #e3f2fd;" href="/Download/DownloadCv" class="btn btn-primary btn-cv-download">
+                        <i class="fas fa-eye me-2"></i> CV'mi İndirebilirsiniz!
+                    </a>
+                </div>
+            </div>
+        </div>

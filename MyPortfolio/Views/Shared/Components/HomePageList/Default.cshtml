@@ -1,0 +1,14 @@
+@using  EntityLayer.Concrete
+@model List<HomePage>
+        <div class="welcome-box">
+            @foreach (var item in Model)
+            {
+                <span class="welcome-first animate" data-animate="fadeInUp">@item.page_title <br/> </span>
+                <br/>
+                <h1 class="welcome-title animate" data-animate="fadeInUp">@item.title <br/></h1>
+                <br/>
+                <p class="animate" data-animate="fadeInUp">@item.description </p>
+                <div class="scroll-down next-section animate data-animate="fadeInUp><img src="~/template/images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+            }
+           
+        </div >

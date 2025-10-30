@@ -1,0 +1,67 @@
+@model System.Collections.Generic.List<Messages>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="header bg-primary pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <h6 class="h2 text-white d-inline-block mb-0">Mesaj Yönetimi</h6>
+                    <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class="breadcrumb-item"><a href="/Dashboard/Index"><i class="fas fa-home"></i></a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Gelen Mesajlar</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header border-0">
+                    <h3 class="mb-0">Tüm Gelen Mesajlar</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Gönderen</th>
+                            <th scope="col">Mail Adresi</th>
+                            <th scope="col">Konu</th>
+                            <th scope="col">Tarih</th>
+                            <th scope="col">İşlemler</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td>@item.message_id</td>
+                            <td>@item.name</td>
+                            <td>@item.email</td>
+                            <td>@item.datetime.ToString("dd MMM yyyy")</td>
+                            <td>
+                                <a href="/Messages/MessageDetail/@item.message_id" class="btn btn-sm btn-info">Detay</a>
+
+                                <form asp-controller="Messages" asp-action="DeleteMessage" asp-route-id="@item.message_id" method="post" style="display:inline;">
+                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bu mesajı silmek istediğinizden emin misiniz?');">Sil</button>
+                                </form>
+                            </td>
+                        </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

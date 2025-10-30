@@ -1,0 +1,100 @@
+@using EntityLayer.Concrete
+@model Messages
+
+@{
+    ViewData["Title"] = "Mesaj Detayı";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml"; 
+}
+
+<div class="header bg-primary pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <h6 class="h2 text-white d-inline-block mb-0">Mesaj Yönetimi</h6>
+                    <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class="breadcrumb-item"><a href="/Dashboard/Index"><i class="fas fa-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="/Messages/Index">Gelen Mesajlar</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Mesaj Detayı</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-xl-12 order-xl-1">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            @Model.message
+                        </div>
+                        <div class="col-4 text-right">
+                            <a href="/Messages/Index" class="btn btn-sm btn-primary">Mesaj Listesine Dön</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    
+                    <h6 class="heading-small text-muted mb-4">Gönderen Bilgileri</h6>
+                    <div class="pl-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label">Gönderen Adı:</label>
+                                    <p class="font-weight-bold">@Model.name</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label">E-Posta Adresi:</label>
+                                    <p class="font-weight-bold">@Model.email</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label">Konu:</label>
+                                    <p class="text-info font-weight-bold">@Model.message</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label">Tarih:</label>
+                                    <p class="font-weight-bold">@((Model.datetime).ToString("dd MMMM yyyy HH:mm"))</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4" />
+                    
+                    <h6 class="heading-small text-muted mb-4">Mesaj İçeriği</h6>
+                    <div class="pl-lg-4">
+                        <div class="form-group">
+                            <p class="form-control-label border p-3 bg-light rounded" style="white-space: pre-wrap; word-wrap: break-word; min-height: 150px;">
+                                @Model.message
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4" />
+
+                    <div class="text-right">
+                        <form asp-controller="Messages" asp-action="DeleteMessage" asp-route-id="@Model.message_id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Bu mesajı silmek istediğinizden emin misiniz?');">
+                                <i class="fas fa-trash"></i> Mesajı Sil
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

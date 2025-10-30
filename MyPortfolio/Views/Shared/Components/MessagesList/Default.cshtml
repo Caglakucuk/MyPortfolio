@@ -1,0 +1,46 @@
+@using EntityLayer.Concrete
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<Messages>
+
+<div class="row justify-content-center">
+    <div class="col-md-7 wide-col-laptop">
+        <div class="title-block animate" data-animate="fadeInUp">
+            <span>İletişim</span>
+            <h2>İş Fırsatları İçin İletişime Geçelim</h2>
+        </div>
+        <div class="contact-section">
+            <div class="row">
+                <div class="col-md-6 animate" data-animate="fadeInUp">
+                    <div class="contact-box">
+                        <div class="contact-row">
+                            <i class="fa fa-map-marker"></i> Kırklareli, Lüleburgaz
+                        </div>
+                        <div class="contact-row">
+                            <i class="fa fa-phone"></i> 0505 417 5565
+                        </div>
+                        <div class="contact-row">
+                            <i class="fa fa-envelope"></i> caglakucuk39@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate" data-animate="fadeInUp">
+                    
+                    
+                    <form id="ajax-contact" method="post" action="/Message/Index">
+                        <div class="input-field">
+                            <input type="text" class="form-control" name="name" id="name" required placeholder="Adınız">
+                        </div>
+                        <div class="input-field">
+                            <input type="email" class="form-control" name="email" id="email" required placeholder="E-posta Adresiniz">
+                        </div>
+                        <div class="input-field">
+                            <textarea class="form-control" name="message" id="message" required placeholder="Mesajınız"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Gönder</button>
+                    </form>
+                    <div id="form-messages" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

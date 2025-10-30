@@ -1,0 +1,29 @@
+@model EntityLayer.Concrete.About
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br/> <br/>
+<div class="card-header border-0">
+    <h3 class="mb-0">Hakkında Düzenleme Sayfası</h3>
+</div>
+@using (Html.BeginForm("Index", "About", FormMethod.Post))
+{
+    @Html.HiddenFor(x=>x.about_id)
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x => x.title, new{@class="form-control"})
+    <br/>
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.description, new{@class="form-control"})
+    <label>Resim</label>
+    <br/>
+    @Html.TextBoxFor(x => x.img_url, new{@class="form-control"})
+    <br/>
+    <button type="submit" class="btn btn-success">Güncelle </button>
+}

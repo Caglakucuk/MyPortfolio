@@ -1,0 +1,35 @@
+@using EntityLayer.Concrete
+@model List<Sertificate>
+<div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                    <span>SERTİFİKALARIM</span>
+                    <h2>Edindiğim Sertifikalar</h2>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="testimonials-section">
+                        <div class="testimonials-slider owl-carousel">
+                            
+                            @foreach (var item in Model)
+                            {
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="testimonial-item">
+                                    <div class="client-row">
+                                        <img src="@item.img_url" class="rounded-circle" alt="@item.company Adı">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <h4>@item.sertificate_name</h4> 
+
+                                        
+                                        <span>@item.company</span> 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            } 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

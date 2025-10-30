@@ -1,0 +1,68 @@
+@model System.Collections.Generic.List<EntityLayer.Concrete.Sertificate>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="col">
+        <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Dark table</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-dark table-flush">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="sort" data-sort="name">Sertifika ID</th>
+                        <th scope="col" class="sort" data-sort="name">Sertifika Adı</th>
+                        <th scope="col">Görsel</th>
+                        <th scope="col" class="sort" data-sort="completion">Şirket</th>
+                        <th scope="col">Sil</th>
+                        <th scope="col" class="sort" data-sort="completion">Düzenle</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="list">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">
+                                <div class="media align-items-center">
+                                    <a href="#" class="avatar rounded-circle mr-3">
+                                        @item.sertificate_id
+                                    </a>
+                                </div>
+                            </th>
+
+                            <td class="budget">
+                                <span class="name mb-0 text-sm">@item.sertificate_name</span>
+                            </td>
+
+                            <td>
+                                <div class="avatar-group">
+                                    <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip"   >
+                                        <img alt="Image placeholder" src="@item.img_url">
+                                    </a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <span class="completion mr-2">@item.company</span>
+                                </div>
+                            </td>
+                            <td><a href="/Sertificate/DeleteSertificate/@item.sertificate_id" class="btn btn-danger">Sil</a></td>
+                            <td><a href="/Sertificate/EditSertificate/@item.sertificate_id" class="btn btn-info">Güncelle</a></td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="/Sertificate/AddSertificate/" class="btn btn-primary" > Yeni Sertifika Girişi</a>
+
+
+

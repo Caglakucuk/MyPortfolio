@@ -1,0 +1,44 @@
+@model List<EntityLayer.Concrete.Projects>
+@{
+// Rastgele renk veya ikon sınıfı seçimi için küçük bir array (isteğe bağlı)
+string[] iconClasses = new string[] { "ni ni-bullet-pro", "ni ni-palette", "ni ni-world", "ni ni-bell-55", "ni ni-tag" };
+int index = 0;
+}
+
+<div class="card">
+    <div class="card-header bg-transparent">
+        <div class="row align-items-center">
+            <div class="col">
+                <h6 class="text-uppercase text-muted ls-1 mb-1">Dinamik Veri</h6>
+                <h5 class="h3 mb-0">Son 5 Proje</h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <ul class="list-group list-group-flush list my--3">
+            @foreach (var project in Model)
+            {
+            <li class="list-group-item px-0">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <a href="@project.githubLink" target="_blank" class="avatar rounded-circle">
+                            <i class="@iconClasses[index++ % iconClasses.Length] text-primary"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <h4 class="mb-0 text-sm">
+                            <a href="#">@project.title</a>
+                        </h4>
+                        <span class="text-xs text-muted">
+                                @project.technologies </span>
+                    </div>
+                </div>
+            </li>
+            }
+        </ul>
+
+        <div class="text-center mt-4">
+            <a href="/Project/Index/" class="btn btn-sm btn-primary">Tüm Projeleri Gör</a>
+        </div>
+    </div>
+</div>

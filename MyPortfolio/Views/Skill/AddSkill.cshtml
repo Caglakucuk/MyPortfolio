@@ -1,0 +1,23 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br/> <br/>
+<div class="card-header border-0">
+    <h3 class="mb-0">Yetenek Ekleme Sayfası</h3>
+</div>
+<br/>
+<form class="form-control" method="post">
+    <br/>
+    <br/>
+    <br/>
+    @Html.Label("Yetenek Başlığı")
+    <input type="text "name="skill_name" class="form-control"/>
+    <br/>
+    <label>Değer</label>
+    <input type="text "name="level" class="form-control"/>
+    <br/>
+    <button type="submit" class="btn btn-primary">Kaydet </button>
+</form>

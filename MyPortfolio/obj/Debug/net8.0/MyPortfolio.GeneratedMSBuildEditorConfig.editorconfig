@@ -1,0 +1,205 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyPortfolio
+build_property.RootNamespace = MyPortfolio
+build_property.ProjectDir = /Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/cagla/RiderProjects/MyPortfolio/MyPortfolio
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Admin/NavigationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vTmF2aWdhdGlvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Admin/PartialFooter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUGFydGlhbEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Admin/PartialHead.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUGFydGlhbEhlYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Admin/PartialNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUGFydGlhbE5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Admin/PartialScript.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUGFydGlhbFNjcmlwdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Admin/PartialSideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUGFydGlhbFNpZGVCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Default/NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Experience/AddExperience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZXJpZW5jZS9BZGRFeHBlcmllbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Experience/EditExperience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZXJpZW5jZS9FZGl0RXhwZXJpZW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Experience/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZXJpZW5jZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/HomePage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZVBhZ2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Messages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVzc2FnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Messages/MessageDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVzc2FnZXMvTWVzc2FnZURldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Project/AddProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9BZGRQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Project/EditProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9FZGl0UHJvamVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Project/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Sertificate/AddSertificate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydGlmaWNhdGUvQWRkU2VydGlmaWNhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Sertificate/EditSertificate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydGlmaWNhdGUvRWRpdFNlcnRpZmljYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Sertificate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydGlmaWNhdGUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/AboutList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQWJvdXRMaXN0L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/ExperiencesList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRXhwZXJpZW5jZXNMaXN0L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/FeatureStatistics/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRmVhdHVyZVN0YXRpc3RpY3MvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/HomePageList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSG9tZVBhZ2VMaXN0L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/Last5Certificates/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvTGFzdDVDZXJ0aWZpY2F0ZXMvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/Last5Projects/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvTGFzdDVQcm9qZWN0cy9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/MessageList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvTWVzc2FnZUxpc3QvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/MessagesList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvTWVzc2FnZXNMaXN0L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/ProjectsList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvUHJvamVjdHNMaXN0L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/SertificateList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvU2VydGlmaWNhdGVMaXN0L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/SkillsList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvU2tpbGxzTGlzdC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Components/SocialMediaList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvU29jaWFsTWVkaWFMaXN0L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Skill/AddSkill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2tpbGwvQWRkU2tpbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Skill/EditSkill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2tpbGwvRWRpdFNraWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Skill/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2tpbGwvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jf259uij4h

@@ -1,0 +1,32 @@
+@model EntityLayer.Concrete.Projects
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br/> <br/>
+<div class="card-header border-0">
+    <h3 class="mb-0">Proje Güncelleme Sayfası</h3>
+</div>
+@using (Html.BeginForm("EditProject", "Project", FormMethod.Post))
+{
+@Html.HiddenFor(x=>x.project_id)
+<br/>
+<br/>
+<br/>
+<br/>
+@Html.Label("Proje Adı")
+@Html.TextBoxFor(x => x.title, new{@class="form-control" ,data_val = "false" })
+<br/>
+@Html.Label("Açıklaması")
+@Html.TextBoxFor(x => x.description, new{@class="form-control", data_val = "false" })
+<br/>
+@Html.Label("Github Linki")
+@Html.TextBoxFor(x => x.githubLink, new{@class="form-control", data_val = "false" })
+<br/>
+@Html.Label("Kullanılan Teknolojiler")
+@Html.TextBoxFor(x => x.technologies, new{@class="form-control", data_val = "false" })
+<br/>
+<button type="submit" class="btn btn-success">Güncelle </button>
+}
