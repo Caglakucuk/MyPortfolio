@@ -34,7 +34,6 @@
 
     <ItemGroup>
       <Content Include="wwwroot\argon-dashboard-master\.github\workflows\main.yml" />
-      <Content Include="wwwroot\template\.DS_Store" />
     </ItemGroup>
 
     <ItemGroup>
@@ -49,5 +48,11 @@
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Views\Shared\Components\GetSkillRatings\Default.cshtml" />
     </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot/argon-dashboard-master/.DS_Store" />
+    <None Remove="wwwroot/template/.DS_Store" />
+  </ItemGroup>
+
 
 </Project>

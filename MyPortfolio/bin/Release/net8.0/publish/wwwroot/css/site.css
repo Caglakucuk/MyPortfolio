@@ -1,0 +1,67 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.navigation-menu {
+  display: flex;
+  align-items: center;
+}
+
+.admin-login-item {
+  margin-left: auto;
+  padding-left: 30px; /* İstediğiniz boşluğu ayarlayın */
+}
+
+/* veya daha belirgin bir ayırıcı için */
+.admin-login-item {
+  margin-left: auto;
+  border-left: 2px solid rgba(255,255,255,0.2);
+  padding-left: 20px;
+}
+/* Zarif, Beyaza Yakın Mavi Tonlu Buton Stili */
+.btn-cv-download {
+  /* Hafif mavi/gri arka plan */
+  background-color: #e3f2fd; /* Çok açık mavi (Bootstrap light blue) */
+  color: #007bff;            /* Metin rengi: Klasik Bootstrap mavi */
+  border: 1px solid #bbdefb; /* Çok hafif bir kenarlık */
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  font-weight: 600; /* Biraz daha kalın metin */
+  border-radius: 8px; /* Yumuşak köşeler */
+  transition: all 0.3s ease; /* Hover efekti için yumuşak geçiş */
+  text-transform: uppercase; /* Hafif modern bir dokunuş */
+  letter-spacing: 0.5px;
+}
+
+/* Mouse Üzerine Geldiğinde (Hover) Efekti */
+.btn-cv-download:hover {
+  background-color: #bbdefb; /* Arka planı biraz koyulaştır */
+  color: #0056b3;            /* Metni biraz koyulaştır */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Hafif gölge ekle */
+  transform: translateY(-2px); /* Butonu hafifçe yukarı kaydır (Derinlik hissi) */
+}
+
+/* Aktif (Tıklama) Durumu */
+.btn-cv-download:active {
+  background-color: #90caf9; /* Daha da koyu arka plan */
+  box-shadow: none;
+  transform: translateY(0); /* Normal konuma geri dön */
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L9oe3ULeiFsq+6/KJjDFcP9KcGfLJsVS9EFlh9q2+10=",
+  "Hash": "6H7MyscRcQJ0HdU3vkm9pWy9PRVO7vWed1eN+ZHm+js=",
   "Source": "MyPortfolio",
   "BasePath": "_content/MyPortfolio",
   "Mode": "Default",
@@ -53,25 +53,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/obj/Release/net8.0/scopedcss/projectbundle/MyPortfolio.bundle.scp.css"
-    },
-    {
-      "Identity": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/argon-dashboard-master/.DS_Store",
-      "SourceId": "MyPortfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/",
-      "BasePath": "_content/MyPortfolio",
-      "RelativePath": "argon-dashboard-master/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/argon-dashboard-master/.DS_Store"
     },
     {
       "Identity": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/argon-dashboard-master/.github/workflows/main.yml",
@@ -57357,25 +57338,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
-    },
-    {
-      "Identity": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/template/.DS_Store",
-      "SourceId": "MyPortfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/",
-      "BasePath": "_content/MyPortfolio",
-      "RelativePath": "template/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/template/.DS_Store"
     },
     {
       "Identity": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/template/css/animate.css",

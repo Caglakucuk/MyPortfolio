@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets/MyPortfolio.bundle.scp.css"
     },
     {
-      "Id": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/argon-dashboard-master/.DS_Store",
-      "PackagePath": "staticwebassets/argon-dashboard-master/.DS_Store"
-    },
-    {
       "Id": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/argon-dashboard-master/.github/workflows/main.yml",
       "PackagePath": "staticwebassets/argon-dashboard-master/.github/workflows/main.yml"
     },
@@ -12067,10 +12063,6 @@
     {
       "Id": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
-    },
-    {
-      "Id": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/template/.DS_Store",
-      "PackagePath": "staticwebassets/template/.DS_Store"
     },
     {
       "Id": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/template/css/animate.css",
