@@ -6,7 +6,7 @@ EXPOSE 80
 # Build stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["MyPortfolio.csproj", "./"]
+COPY ["MyPortfolio/MyPortfolio.csproj", "./"]
 RUN dotnet restore "./MyPortfolio.csproj"
 COPY . .
 RUN dotnet build "MyPortfolio.csproj" -c Release -o /app/build
