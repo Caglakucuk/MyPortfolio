@@ -108,7 +108,9 @@ builder.Services.AddHangfire(config =>
         new PostgreSqlStorageOptions
         {
             SchemaName = "hangfire",
+            PrepareSchemaIfNecessary = true
         });
+    
 });
 builder.Services.AddHangfireServer();
 
