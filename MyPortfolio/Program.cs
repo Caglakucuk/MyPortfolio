@@ -147,4 +147,21 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Default}/{action=Index}/{id?}");
 
+using (var scope = app.Services.CreateScope())
+{
+    try
+    {
+        var context = scope.ServiceProvider.GetRequiredService<DataAccessLayer.Concrete.AppDbContext>();
+        
+        // KRİTİK: Tüm bekleyen migrasyonları uygula
+        context.Database.Migrate(); 
+        Console.WriteLine("INFO: EF Core Migrations applied successfully.");
+    }
+    catch (Exception ex)
+    {
+        // Migrasyon hatasını logla
+        Console.WriteLine($"FATAL: EF Core Migration failed to run: {ex.Message}");
+    }
+}
+
 app.Run();
