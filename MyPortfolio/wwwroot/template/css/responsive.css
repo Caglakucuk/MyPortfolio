@@ -1,4 +1,34 @@
 @media only screen and (min-width: 768px) {
+	.navbar {
+		/* 1. Flexbox ile yatay hizalamayı aç */
+		display: flex;
+		/* 2. Elemanları iki uca yasla: Çağla Sola, Buton Sağa */
+		justify-content: space-between;
+		/* 3. Dikeyde ortala (logonun tam ortasına gelsin) */
+		align-items: center;
+		/* 4. Buton ve logo arasındaki ekstra boşluğu kaldır (varsa) */
+		width: 100%;
+		/* padding: 15px 0; kuralı zaten var, ona dokunmuyoruz */
+	}
+
+	.navbar-toggle {
+		/* Mevcut konumlandırmayı Flexbox'a uyarlıyoruz */
+		position: relative; /* Absolute'dan relative'e çekiyoruz */
+		top: auto;
+		transform: none; /* Üst üste binmeye neden olan dönüşümü iptal et */
+		z-index: 999; /* Üste çıkmasını garantile */
+	}
+
+	/* Logo'nun sağdaki butona doğru kaymasını engellemek için */
+	#logo {
+		/* Fazla boşluk almasını engelle */
+		white-space: nowrap;
+		/* Metin taşmasını engelle */
+		overflow: hidden;
+		/* Logo için uygun bir alan bırak */
+		max-width: 60%;
+		text-overflow: ellipsis;
+	}
 	.nav-box {
 		display:block !important;
 		height:auto !important;

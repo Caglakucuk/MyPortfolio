@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bgQGztPVtoZ1B5XIc3j9V8EEOtwDqIegumO7PlqEg1w=",
+  "Hash": "GUZ1QgpGJgay2HFVWcUZszyj5p2xdosINXQ+pyT5W54=",
   "Source": "MyPortfolio",
   "BasePath": "_content/MyPortfolio",
   "Mode": "Default",
@@ -55970,6 +55970,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/argon-dashboard-master/README.md"
+    },
+    {
+      "Identity": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/cagla_kucuk_cv.pdf",
+      "SourceId": "MyPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/",
+      "BasePath": "_content/MyPortfolio",
+      "RelativePath": "cagla_kucuk_cv.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/cagla_kucuk_cv.pdf"
     },
     {
       "Identity": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/css/site.css",

@@ -11777,6 +11777,10 @@
       "PackagePath": "staticwebassets/argon-dashboard-master/package.json"
     },
     {
+      "Id": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/cagla_kucuk_cv.pdf",
+      "PackagePath": "staticwebassets/cagla_kucuk_cv.pdf"
+    },
+    {
       "Id": "/Users/cagla/RiderProjects/MyPortfolio/MyPortfolio/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
