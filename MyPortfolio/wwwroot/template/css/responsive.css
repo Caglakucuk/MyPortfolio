@@ -247,6 +247,7 @@
 	/* 3. Logo ve Butonu Ayırma (Flexbox) */
 	.navbar {
 		padding:15px 0;
+		
 		/* Flexbox: Logo sola, buton sağa */
 		display: flex;
 		justify-content: space-between;
@@ -256,24 +257,13 @@
 
 	/* 4. Buton Konum Düzeltmesi */
 	.navbar-toggle {
-		/* Eski mutlak konumlandırma kurallarını devre dışı bırakıyoruz */
-		/* position: absolute; /* Kaldırın veya relative yapın */
-		/* top: 50%; /* Kaldırın veya auto yapın */
-		/* transform: translateY(-50%); /* Kaldırın veya none yapın */
-
-		/* Yerine, bu satırları ekleyin/düzenleyin: */
 		position: relative; /* Normal akışa geri dön */
-		right: 0; /* Sağdan hizalamayı koru */
+		right: 0;
 		top: auto;
 		transform: none;
-
 		padding: 0;
 		margin: 0;
-
-		/* Z-index'i yüksek tutalım */
 		z-index: 99;
-
-		/* Bu ayarlar logo ile butonu ayırmak için önemlidir */
 		margin-left: auto;
 	}
 
