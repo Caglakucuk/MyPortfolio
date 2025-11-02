@@ -42,6 +42,7 @@
 
     <ItemGroup>
       <Folder Include="Pages\" />
+      <Folder Include="PrivateFiles\" />
       <Folder Include="ViewComponents\Admin\" />
     </ItemGroup>
 
@@ -52,6 +53,7 @@
   <ItemGroup>
     <None Remove="wwwroot/argon-dashboard-master/.DS_Store" />
     <None Remove="wwwroot/template/.DS_Store" />
+    <None Include="wwwroot\cagla_kucuk_cv.pdf" />
   </ItemGroup>
 
 

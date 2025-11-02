@@ -1,6 +1,6 @@
-// Örnek: DownloadController.cs
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Hosting; // IWebHostEnvironment'ı kullanmak için
+using Microsoft.AspNetCore.Hosting;
+using System.IO; // System.IO.File işlemleri için
 
 public class DownloadController : Controller
 {
@@ -14,17 +14,23 @@ public class DownloadController : Controller
     public IActionResult DownloadCv()
     {
         var fileName = "cagla_kucuk_cv.pdf";
-        var filePath = Path.Combine(_env.ContentRootPath, "PrivateFiles", fileName); 
+        
+        // DÜZELTME: Dosyayı wwwroot klasöründe ara.
+        // Dosyanın wwwroot/cagla_kucuk_cv.pdf konumunda olduğunu varsayarız.
+        var filePath = Path.Combine(_env.WebRootPath, fileName); 
         
         if (!System.IO.File.Exists(filePath))
         {
+            // Debug için nerede aradığını görelim.
+            // Bu sadece yerel test için faydalıdır.
+            // return NotFound($"Dosya bulunamadı. Aranan yol: {filePath}");
             return NotFound("İstenen dosya bulunamadı.");
         }
 
-        var fileBytes = System.IO.File.ReadAllBytes(filePath);
-        var mimeType = "application/pdf"; // PDF dosyası için MIME tipi
+        var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+        var mimeType = "application/pdf";
 
-        // Dosyayı kullanıcıya indirme olarak gönderir
-        return File(fileBytes, mimeType, "Cagla_Kucuk_CV.pdf");
+        // FileStream'i indirme olarak gönderir, bu genellikle ReadAllBytes'tan daha verimlidir.
+        return File(fileStream, mimeType, "Cagla_Kucuk_CV.pdf");
     }
 }
