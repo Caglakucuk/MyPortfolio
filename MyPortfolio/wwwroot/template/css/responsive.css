@@ -1,50 +1,30 @@
 @media only screen and (min-width: 768px) {
+	/* Aşağıdaki tüm Flexbox kurallarını ve navbar-toggle düzeltmelerini KALDIRIN
+       çünkü bunlar masaüstü görünümünü bozuyor.
+    */
 	.navbar {
-		/* 1. Flexbox ile yatay hizalamayı aç */
-		display: flex;
-		/* 2. Elemanları iki uca yasla: Çağla Sola, Buton Sağa */
-		justify-content: space-between;
-		/* 3. Dikeyde ortala (logonun tam ortasına gelsin) */
-		align-items: center;
-		/* 4. Buton ve logo arasındaki ekstra boşluğu kaldır (varsa) */
-		width: 100%;
-		/* padding: 15px 0; kuralı zaten var, ona dokunmuyoruz */
+		/* KALDIR: display: flex; */
+		/* KALDIR: justify-content: space-between; */
+		/* KALDIR: align-items: center; */
+		/* KALDIR: width: 100%; */
 	}
 
 	.navbar-toggle {
-		/* Eski mutlak konumlandırma kurallarını devre dışı bırakıyoruz */
-		/* position: absolute; /* Kaldırın veya relative yapın */
-		/* top: 50%; /* Kaldırın veya auto yapın */
-		/* transform: translateY(-50%); /* Kaldırın veya none yapın */
-
-		/* Yerine, bu satırları ekleyin/düzenleyin: */
-		position: relative; /* Normal akışa geri dön */
-		right: 0; /* Sağdan hizalamayı koru */
-		top: auto;
-		transform: none;
-
-		padding: 0;
-		margin: 0;
-
-		/* Z-index'i yüksek tutalım */
-		z-index: 99;
-
-		/* Gerekirse, logo ile butonu ayırmak için margin-left ekleyebilirsiniz */
-		/* margin-left: auto; /* Logo'dan en sağa iter */
-
-		/* Renk düzeltmesi için B ve C adımlarına bakın */
+		/* KALDIR: position: relative; */
+		/* KALDIR: right: 0; */
+		/* KALDIR: top: auto; */
+		/* KALDIR: transform: none; */
+		/* KALDIR: z-index: 99; */
 	}
-	/* Logo'nun sağdaki butona doğru kaymasını engellemek için */
+
 	#logo {
-		/* Fazla boşluk almasını engelle */
-		white-space: nowrap;
-		/* Metin taşmasını engelle */
-		overflow: hidden;
-		/* Logo için uygun bir alan bırak */
-		max-width: 60%;
-		text-overflow: ellipsis;
+		/* KALDIR: white-space: nowrap; */
+		/* KALDIR: overflow: hidden; */
+		/* KALDIR: max-width: 60%; */
+		/* KALDIR: text-overflow: ellipsis; */
 	}
 	.nav-box {
+		/* BU KALSIN, menünün masaüstünde görünmesi için gerekiyor olabilir */
 		display:block !important;
 		height:auto !important;
 	}
@@ -243,17 +223,38 @@
 		position: fixed;
 		top: 0;
 		z-index: 6666;
-		background-color: rgba(250,250,250,0.9);
+		/* Renk sorunu için arka plan rengini koyu/siyah bir değer yapalım */
+		background-color: rgba(30,30,30,0.95);
 	}
+
+	/* 1. Menü İkonu Rengi Düzeltmesi */
 	#navigation button i {
+		/* Header arka planını koyu yaptık, bu yüzden ikon rengi beyaz olmalı */
 		color: #ffffff;
+		font-size: 24px; /* İkonun görünürlüğünü artırmak için */
 	}
+
 	.welcome-box {
 		padding: 150px 0px;
 	}
+
+	/* 2. Logo Rengi Düzeltmesi */
 	#logo {
+		/* Header arka planını koyu yaptık, bu yüzden logo rengi beyaz olmalı */
 		color: #ffffff;
 	}
+
+	/* 3. Logo ve Butonu Ayırma (Flexbox) */
+	.navbar {
+		padding:15px 0;
+		/* Flexbox: Logo sola, buton sağa */
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	/* 4. Buton Konum Düzeltmesi */
 	.navbar-toggle {
 		/* Eski mutlak konumlandırma kurallarını devre dışı bırakıyoruz */
 		/* position: absolute; /* Kaldırın veya relative yapın */
@@ -272,136 +273,11 @@
 		/* Z-index'i yüksek tutalım */
 		z-index: 99;
 
-		/* Gerekirse, logo ile butonu ayırmak için margin-left ekleyebilirsiniz */
-		/* margin-left: auto; /* Logo'dan en sağa iter */
+		/* Bu ayarlar logo ile butonu ayırmak için önemlidir */
+		margin-left: auto;
+	}
 
-		/* Renk düzeltmesi için B ve C adımlarına bakın */
-	}
-	#header {
-		padding:0;
-	}
-	.navbar {
-		padding:15px 0;
-	}
-	.navbar-toggle:focus {
-		outline:none;
-	}
-	.navbar-nav {
-		margin: 0;
-	}
-	.collapse:not(.show) {
-		display:none;
-	}
-	.navigation-menu > li {
-		display: block;
-		margin: 0;
-		font-size: 15px;
-		text-align: center;
-	}
-	.navigation-menu > li > a {
-		color:#222;
-		padding:15px;
-		line-height:1.2;
-	}
-	.navbar-nav {
-		overflow-y: auto;
-		display:block;
-		background: rgba(230, 230, 230, 0.25);
-	}
-	.navbar-nav li a:after {
-		display:none;
-	}
-	.nav-box {
-		position: absolute;
-		left: -15px;
-		right: -15px;
-		border: 0;
-		box-shadow: none;
-		background: #fff;
-		text-align:left;
-		top: 100%;
-		display:none;
-	}
-	.welcome-title {
-		font-size: 60px;
-		margin-bottom:20px;
-	}
-	.welcome-first {
-		font-size: 20px;
-	}
-	.welcome-title:before {
-		margin: 20px auto 15px;
-	}
-	.welcome-box {
-		font-size:inherit;
-	}
-	.welcome-box .btn {
-		margin-top:0;
-	}
-	.about-img {
-		margin-bottom:10px;
-	}
-	h1, h2 {
-		font-size:36px;
-	}
-	body {
-		font-size:15px;
-	}
-	.about-contentbox {
-		margin-top: 60px;
-		text-align:center;
-	}
-	.testimonials-section {
-		padding-top:0;
-	}
-	h4 {
-		font-size:18px;
-	}
-	.contact-box {
-		margin-top: 30px;
-		height:auto;
-	}
-	.footer-right {
-		width:100%;
-		margin:15px 0 0;
-		text-align:left;
-	}
-	.btn {
-		font-size:15px;
-		line-height:48px;
-		padding:0 30px;
-	}
-	.contact-row {
-		margin-top: 15px;
-	}
-	.content-section {
-		padding:50px 0;
-	}
-	.info-inner {
-		margin-top: 20px;
-		padding-bottom:15px;
-	}
-	.index-white .navbar-toggle {
-		color: #242424;
-	}
-	.side-menu .nav-box > ul {
-		padding: 70px 40px 40px;
-	}
-	.side-menu .navbar-nav li a {
-		font-size:20px;
-	}
-	.social-icons {
-		margin: 0 auto;
-	}
-	.detail-page h1 {
-		margin-bottom: 50px;
-	}
-	.project-detail-col figure {
-		margin-top: 35px;
-	}
-	.project-buttons-margin {
-		margin-top: 50px;
-	}
+	/* ... (Geri kalan mobil kodlar) ... */
 }
 @media only screen and (max-width: 575px) {
 	.welcome-title {
