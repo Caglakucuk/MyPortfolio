@@ -32,7 +32,11 @@
     @Html.Label("Kullanılan Teknolojiler")
     @Html.TextBoxFor(x => x.technologies, new{@class="form-control"})
     @Html.ValidationMessageFor(x => x.technologies)
-
+    <br/>
+    <br/>
+    @Html.Label("Görsel Linki")
+    @Html.TextBoxFor(x => x.imageUrl, new{@class="form-control"})
+    @Html.ValidationMessageFor(x => x.imageUrl)
     <br/>
     <button type="submit" class="btn btn-success">Ekle </button>
 }
